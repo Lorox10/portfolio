@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portafolio Personal</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <div class="container">
+        <h1 id="typing-text"></h1>
+        <div class="imagen-contenedor">
+          <p>
+            <br />
+            Apasionado por la programación y la resolución de problemas, con sólidos conocimientos
+            y promedios académicos destacados. Mi principal habilidad es la lógica de programación
+            con fluidez en C++, Python y C#. Actualmente me enfoco en mejorar continuamente en C#,
+            explorando nuevas técnicas de desarrollo de software. Además, tengo conociminetos en
+            Redes y una comprensión básica en Sistemas Operativos.
+          </p>
+          <img src="Imagenes/Lorenzo.png" alt="Imagen-Lorenzo" width="600px" height="300px" title="Lorenzo Vargas Sala">
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Lenguajes de Programación</h3>
+            <img src="Imagenes/Python-Programming-Language.webp" alt="Logo Python" width="50px" height="50px"
+              title="Python">
+            <img src="Imagenes/Mesa de trabajo 1.png" alt="Logo C++" width="50px" height="50px" title="C++">
+            <img src="Imagenes/c-2_orig.png" alt="Logo C#" width="50px" height="50px" title="C#">
+            <img src="Imagenes/javascript-logo-0.png" alt="Logo JavaScript" width="55px" height="50px"
+              title="JavaScript">
+            <p>Experto en la Lógica de Programación</p>
+          </div>
+          <div class="skill">
+            <h3>Desarrollo Web</h3>
+            <img src="Imagenes/html.png" alt="Logo HTML" width="50px" height="50px" title="HTML">
+            <img src="Imagenes/CSS.png" alt="Logo CSS" width="38px" height="50px" title="CSS">
+            <p>Dominio de creación de sitios web modernos y adaptativos</p>
+          </div>
+          <div class="skill">
+            <h3> Desarrollo de .NET</h3>
+            <img src="Imagenes/asp-net-logo.png" alt="Logo ASP.NET" width="50px" height="50px" title="ASP.NET">
+            <img src="Imagenes/net.png" alt="Logo .NET" width="60px" height="50px" title=".NET">
+            <p>Desarrollador de aplicaciones robustas con .Net y ASP.NET</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Mis proyectos</h2>
+      <div class="project-gallery">
+
+        <a href="https://github.com/Lorox10/Tienda-con-conexi-n-a-MySQL-y-CRUD-" target="_blank" class="no-style-link">
+          <article class="project">
+            <h3>Inventario de Tienda</h3>
+            <img src="Imagenes/Tienda.gif" alt="Gif Mi Tienda" width="300px" height="200px" title="Inventario de Tienda"
+              class="transparent-gif">
+            <p>Puedes tener tu inventario por medio de este Software con conexión a MySQL</p>
+          </article>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=T8o0yWx5m3o" target="_blank" class="no-style-link">
+          <article class="project">
+            <h3>MEGADETH's Corner</h3>
+            <img src="Imagenes/Megadeth.gif" alt="Gif Reproductor Audio y Video" width="300px" height="200px"
+              title="Reproductor de Audio y Video" class="transparent-gif">
+            <p>Es un espacio dedicado a uno de los dioses del Thrash Metal  -Dave Mustaine-</p>
+          </article>
+        </a>
+
+        <a href="https://github.com/Lorox10/Hoja-de-vida-en-POO" target="_blank" class="no-style-link">
+          <article class="project">
+            <h3>Hoja de Vida en .NET</h3>
+            <img src="Imagenes/3.gif" alt="gif Hoja de vida" width="300px" height="200px" title="Prototipo de Hoja de Vida"
+              class="transparent-gif">
+            <p>El primer Programa que realicé en .NET y C# <br /> (Prototipo)</p>
+          </article>
+        </a>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <section id="contact"></section>
+    <div class="container">
+      <p >Contacto: <a class="correo" href="mailto:loroxazquach10@gmial.com?subject=Contacto&body= En un lapso de 30 minutos
+           aproximadamente te estoy respondiendo">loroxazquach10@gmail.com</a></p>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/loroxazquatch/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/lorenzo-vargas-sala-42b609326/" target="_blank">Linkedin</a>
+        <a href="https://github.com/Lorox10?tab=repositories" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const text = "¡Hola, Soy Lorenzo!";
+    let index = 0;
+
+    function typeEffect() {
+      const typingText = document.getElementById("typing-text");
+      if (index < text.length) {
+        typingText.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 150); 
+      }
+    }
+
+    window.onload = typeEffect;
+  </script>
+
+</body>
+
+</html>
